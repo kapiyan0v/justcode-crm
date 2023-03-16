@@ -1,0 +1,413 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+.container {
+  width: 100%;
+  margin: 0 16px 0; }
+
+body {
+  background-color: #f6f8ff;
+  overflow-x: hidden; }
+
+.header {
+  height: 60px;
+  background-color: #fff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); }
+  .header-inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+  .header-logo {
+    margin: 8px 50px; }
+    .header-logo:hover {
+      opacity: .5;
+      transition: .3s ease;
+      cursor: pointer; }
+  .header-actions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 40px; }
+    .header-actions__notifications {
+      margin-right: 30px; }
+      .header-actions__notifications:hover {
+        opacity: .5;
+        transition: .3s ease;
+        cursor: pointer; }
+    .header-actions__profile {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-right: 60px; }
+      .header-actions__profile img {
+        height: 24px;
+        margin-right: 11px; }
+      .header-actions__profile p {
+        font-family: "Ubuntu", sans-serif;
+        font-size: 13px;
+        color: #5E6A86;
+        font-weight: 500;
+        margin-right: 5px; }
+      .header-actions__profile:hover {
+        opacity: .5;
+        transition: .3s ease;
+        cursor: pointer; }
+    .header-actions__help:hover {
+      opacity: .5;
+      transition: .3s ease;
+      cursor: pointer; }
+
+.main {
+  display: flex;
+  flex-direction: row; }
+
+.navigation {
+  width: 200px;
+  background-color: #142957;
+  height: 100vh;
+  padding: 56px 18px; }
+  .navigation-list {
+    list-style: none; }
+    .navigation-list__item {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 26px; }
+      .navigation-list__item img {
+        width: 20px;
+        margin-right: 15px; }
+      .navigation-list__item p {
+        font-family: "Ubuntu", sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        color: #fff; }
+      .navigation-list__item:hover {
+        opacity: .5;
+        transition: .3s ease;
+        cursor: pointer; }
+
+.dashboard {
+  font-family: "Ubuntu", sans-serif;
+  margin: 40px 16px 20px 20px; }
+  .dashboard-selects {
+    display: flex;
+    flex-direction: row; }
+    .dashboard-selects select {
+      padding: 8px 10px 8px 16px;
+      text-align: left;
+      border: none;
+      background-color: #fff;
+      border-radius: 8px;
+      color: #5E6A86;
+      font-size: 14px; }
+    .dashboard-selects #time-select {
+      margin-right: 20px; }
+  .dashboard-offers {
+    background-color: #fff;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    padding: 30px; }
+    .dashboard-offers__summary {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; }
+      .dashboard-offers__summary-title p {
+        font-size: 16px;
+        color: #5E6A86; }
+        .dashboard-offers__summary-title p:first-child {
+          margin-bottom: 30px; }
+      .dashboard-offers__summary-title h1 {
+        font-size: 48px;
+        color: #142957;
+        margin-bottom: 40px; }
+        .dashboard-offers__summary-title h1 sup {
+          background-color: #F4FF88;
+          color: #5B8C00;
+          font-size: 12px;
+          padding: 5px 3px;
+          border-radius: 60px; }
+      .dashboard-offers__summary-title-summ {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; }
+        .dashboard-offers__summary-title-summ svg {
+          cursor: pointer; }
+    .dashboard-offers__categories {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; }
+      .dashboard-offers__categories-item p {
+        font-size: 16px;
+        color: #5E6A86;
+        margin-bottom: 18px; }
+        .dashboard-offers__categories-item p span {
+          margin-left: 11px;
+          font-weight: 700;
+          background-color: #F4FF88;
+          color: #5B8C00;
+          font-size: 12px;
+          padding: 5px 3px;
+          border-radius: 60px; }
+        .dashboard-offers__categories-item p .red {
+          border-color: #FFD8BF;
+          color: #ad2102; }
+      .dashboard-offers__categories-item h1 {
+        font-size: 48px;
+        color: #142957;
+        margin-bottom: 40px; }
+      .dashboard-offers__categories-item__summary {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; }
+  .dashboard-text {
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 35px; }
+  .dashboard-managers {
+    margin-top: 20px;
+    font-family: "Ubuntu", sans-serif;
+    display: flex;
+    flex-direction: row;
+    width: 694px; }
+    .dashboard-managers__deals {
+      background-color: #fff;
+      border-radius: 25px;
+      display: flex;
+      flex-direction: column;
+      padding: 32px 24px 32px 24px;
+      margin-top: 20px;
+      font-size: 15px;
+      width: 694px;
+      height: 384px; }
+      .dashboard-managers__deals tr {
+        border-bottom: #ad2102; }
+      .dashboard-managers__deals-table-img {
+        padding: 20px 16px 20px 24px; }
+      .dashboard-managers__deals-table-name {
+        font-family: "Ubuntu", sans-serif;
+        font-size: 15px;
+        line-height: 17.24px;
+        padding-right: 101px;
+        font-weight: 400; }
+      .dashboard-managers__deals-table-value {
+        font-family: "Ubuntu", sans-serif;
+        font-size: 16px;
+        opacity: 45%;
+        font-weight: 400;
+        line-height: 22px;
+        padding-right: 40px; }
+      .dashboard-managers__deals-table-scale {
+        margin-right: 8px;
+        accent-color: #5874D0; }
+      .dashboard-managers__deals-table-percent {
+        font-family: "Ubuntu", sans-serif;
+        font-size: 14px;
+        opacity: 45%;
+        line-height: 22px;
+        padding-right: 25px; }
+      .dashboard-managers__deals-page {
+        padding-left: 254px; }
+        .dashboard-managers__deals-page li {
+          padding: 5px; }
+          .dashboard-managers__deals-page li a {
+            color: #5E6A86; }
+    .dashboard-managers__attention {
+      background-color: #fff !important;
+      border-radius: 25px;
+      display: flex;
+      flex-direction: row;
+      margin-top: 20px;
+      margin-left: 20px;
+      font-size: 15px;
+      width: 592px;
+      height: 310px; }
+      .dashboard-managers__attention-text p {
+        font-family: "Ubuntu", sans-serif;
+        color: #142957;
+        font-size: 36px;
+        line-height: 41.36px;
+        padding: 0 0 15px 0;
+        font-weight: 700;
+        padding: 20px 0 0 20px; }
+      .dashboard-managers__attention-text h2 {
+        font-family: "Ubuntu", sans-serif;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 17px;
+        height: 68px;
+        padding: 20px 0 0 20px; }
+      .dashboard-managers__attention-text h3 {
+        color: #5874D0;
+        font-size: 18px;
+        font-weight: 400;
+        padding: 88px 0 20px 25px; }
+      .dashboard-managers__attention-img {
+        border-top-right-radius: 80px 80px;
+        margin-top: -25px;
+        width: 333px;
+        margin-left: 20px;
+        border-top-right-radius: 80px 80px; }
+  .dashboard-tasks {
+    background-color: #5874D0;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    margin: 102px 0 0 20px;
+    width: 694px; }
+    .dashboard-tasks__navigation {
+      display: flex;
+      flex-direction: row; }
+      .dashboard-tasks__navigation p {
+        font-family: "Ubuntu", sans-serif;
+        color: #fff;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 41.36px;
+        padding: 22px 0 40px 20px; }
+      .dashboard-tasks__navigation-selects {
+        padding-left: 280px;
+        padding-top: 31px; }
+        .dashboard-tasks__navigation-selects select {
+          padding: 8px 10px 8px 8px;
+          text-align: left;
+          border: none;
+          background-color: #fff;
+          border-radius: 8px;
+          color: #5E6A86;
+          font-size: 14px;
+          width: 124px; }
+        .dashboard-tasks__navigation-selects #day-select {
+          margin-right: 20px; }
+    .dashboard-tasks__list {
+      background-color: #fff;
+      border-radius: 25px;
+      padding: 29px 0 28px 0; }
+      .dashboard-tasks__list-img {
+        padding: 0 15px 0 30px; }
+      .dashboard-tasks__list h1 {
+        font-family: "Ubuntu", sans-serif;
+        color: #142957;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 25px; }
+      .dashboard-tasks__list h2 {
+        font-family: "Ubuntu", sans-serif;
+        color: #5E6A86;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 25px; }
+      .dashboard-tasks__list h3 {
+        font-family: "Ubuntu", sans-serif;
+        color: #B7B7B7;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 25px;
+        padding-top: 5px;
+        padding-bottom: 15px; }
+      .dashboard-tasks__list-svg {
+        display: flex;
+        flex-direction: column;
+        padding-left: 329px; }
+        .dashboard-tasks__list-svg-first {
+          padding-top: 30.5px;
+          padding-bottom: 39.25px; }
+
+.clients {
+  padding: 29px 0 0 20px; }
+  .clients-main {
+    display: flex;
+    flex-direction: row; }
+    .clients-main p {
+      color: #142957;
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 27.58px; }
+    .clients-main ul li {
+      color: #5E6A86;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 18.38px;
+      padding-top: 8px;
+      list-style: none;
+      padding-right: 75px; }
+    .clients-main ul li::before {
+      content: "\2022";
+      font-size: 16px;
+      padding: 15px 5px 0 14px; }
+    .clients-main form input {
+      width: 552px;
+      height: 40px;
+      border-radius: 5px;
+      border: none;
+      padding: 12.5px 0 12.5px 20px;
+      font-size: 13px;
+      font-weight: 300;
+      line-height: 14.94px;
+      font-family: "Ubuntu", sans-serif;
+      color: #B7B7B7; }
+    .clients-main form button {
+      border: none;
+      background-color: #fff;
+      height: 40px;
+      width: 40px; }
+    .clients-main__button {
+      background-color: #5874D0;
+      padding: 11.5px 13px 11.5px 40px;
+      width: 184px;
+      height: 40px;
+      color: #fff;
+      font-size: 15px;
+      line-height: 17.24px;
+      font-weight: 400;
+      margin-left: 93px;
+      border-radius: 5px;
+      border: none; }
+  .clients-table {
+    background-color: #fff;
+    width: 1204px;
+    margin-top: 26px;
+    padding-left: 49.97px; }
+    .clients-table thead {
+      color: #5E6A86;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 16.09px;
+      margin-bottom: 8px; }
+      .clients-table thead tr td:first-child {
+        padding: 32px 21.97px 32px 0; }
+      .clients-table thead tr td:nth-child(2) {
+        padding-right: 138px; }
+      .clients-table thead tr td:nth-child(3) {
+        padding-right: 47px;
+        width: 97px; }
+      .clients-table thead tr td:nth-child(4) {
+        padding-right: 49px; }
+      .clients-table thead tr td:nth-child(5) {
+        padding-right: 114px; }
+      .clients-table thead tr td:nth-child(6) {
+        padding-right: 47px; }
+    .clients-table tbody {
+      color: #000000;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 16.09px; }
+      .clients-table tbody tr td:first-child {
+        padding: 12px 0 12px 0; }
+  .clients-page {
+    display: flex;
+    flex-direction: row; }
+    .clients-page h3 {
+      color: #5E6A86;
+      font-size: 15px;
+      font-weight: 400;
+      font-family: "Ubuntu", sans-serif;
+      line-height: 17.24px;
+      padding: 16px 10px 33px 665px; }
+    .clients-page nav {
+      padding-top: 8px; }
+      .clients-page nav li {
+        padding: 5px; }
+        .clients-page nav li a {
+          color: #5E6A86; }
