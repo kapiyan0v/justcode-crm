@@ -83,6 +83,7 @@ body {
                 margin-right: 11px;
             }
             p {
+                margin-bottom: 0;
                 font-family: $font;
                 font-size: 13px;
                 color: $secondary-color;
@@ -105,10 +106,10 @@ body {
     flex-direction: row;
 }
 .navigation {
-    width: 200px;
+    width: 270px;
     background-color: $accent-color;
     height: 100vh;
-    padding: 56px 18px;
+    padding: 45px 10px;
     &-list {
         list-style: none;
         &__item {
@@ -475,24 +476,26 @@ body {
     &-main {
         display: flex;
         flex-direction: row;
+        align-items: center;
         // * {box-sizing: border-box;}
         p {
             color: #142957;
             font-size: 24px;
             font-weight: 500;
             line-height: 27.58px;
-
+            margin-bottom: 0;
         }
         ul {
-            
+            display: flex;
+            align-items: center;
+            margin-bottom: 0px;
             li {
                 color: #5E6A86;
                 font-size: 16px;
                 font-weight: 400;
                 line-height: 18.38px;
-                padding-top: 8px;
                 list-style: none;
-                padding-right: 75px;
+                margin-right: 50px;
             }
             li::before {
                 content: "\2022";
@@ -555,32 +558,21 @@ body {
             line-height: 16.09px;
             margin-bottom: 8px;
             
-            tr{
-                
-                td:first-child {
-                    padding: 32px 21.97px 32px 0; 
+            tr {
+
+                td {
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                    width: 240px;
+                    padding-right: 40px;
+                    &:first-child {
+                        width: 20px;
+                        margin-right: 20px;
+                    }
+                    &:nth-child(2) {
+                        width: 20px;
+                    }
                 }
-                td:nth-child(2) {
-                    padding-right: 138px;
-                }
-                td:nth-child(3) {
-                    padding-right: 47px;
-                    width: 97px;
-                }
-                td:nth-child(4) {
-                    padding-right: 49px;
-                    
-                }
-                td:nth-child(5) {
-                    padding-right: 114px;
-                    
-                }
-                td:nth-child(6) {
-                    padding-right: 47px;
-                    
-                }
-                
-                
             }
         }
         tbody {
