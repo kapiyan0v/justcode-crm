@@ -44,6 +44,7 @@ body {
         height: 24px;
         margin-right: 11px; }
       .header-actions__profile p {
+        margin: 0;
         font-family: "Ubuntu", sans-serif;
         font-size: 13px;
         color: #5E6A86;
@@ -65,7 +66,7 @@ body {
 .navigation {
   width: 200px;
   background-color: #142957;
-  height: 100vh;
+  height: 250vh;
   padding: 56px 18px; }
   .navigation-list {
     list-style: none; }
@@ -352,21 +353,28 @@ body {
       background-color: #fff;
       height: 40px;
       width: 40px; }
+    .clients-main__gear {
+      width: 40px;
+      height: 40px;
+      background-color: #5874D0;
+      border: none;
+      border-radius: 5px;
+      margin-left: 63px; }
     .clients-main__button {
       background-color: #5874D0;
-      padding: 11.5px 13px 11.5px 40px;
+      padding: 11.5px px 11.5px 40px;
       width: 184px;
       height: 40px;
       color: #fff;
       font-size: 15px;
       line-height: 17.24px;
       font-weight: 400;
-      margin-left: 93px;
+      margin-left: 20px;
       border-radius: 5px;
       border: none; }
   .clients-table {
     background-color: #fff;
-    width: 1204px;
+    width: 1254px;
     margin-top: 26px;
     padding-left: 49.97px; }
     .clients-table thead {
@@ -376,17 +384,19 @@ body {
       line-height: 16.09px;
       margin-bottom: 8px; }
       .clients-table thead tr td:first-child {
-        padding: 32px 21.97px 32px 0; }
+        padding: 32px 31.97px 32px 0; }
       .clients-table thead tr td:nth-child(2) {
-        padding-right: 138px; }
+        padding-right: 20px; }
       .clients-table thead tr td:nth-child(3) {
-        padding-right: 47px;
+        padding-right: 120px;
         width: 97px; }
       .clients-table thead tr td:nth-child(4) {
-        padding-right: 49px; }
+        padding-right: 80px; }
       .clients-table thead tr td:nth-child(5) {
-        padding-right: 114px; }
+        padding-right: 100px; }
       .clients-table thead tr td:nth-child(6) {
+        padding-right: 120px; }
+      .clients-table thead tr td:nth-child(7) {
         padding-right: 47px; }
     .clients-table tbody {
       color: #000000;
@@ -394,7 +404,7 @@ body {
       font-weight: 400;
       line-height: 16.09px; }
       .clients-table tbody tr td:first-child {
-        padding: 12px 0 12px 0; }
+        padding: 12px 30px 12px 0; }
   .clients-page {
     display: flex;
     flex-direction: row; }
