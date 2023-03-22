@@ -614,4 +614,39 @@ body {
         }
         
     }
+    &-change {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        position: fixed;
+        padding: 0 20px 0 15px;
+        background-color: $accent-color;
+        border-radius: 8px;
+        width: 800px;
+        height: 50px;
+        left: 500px;
+        top: 700px;
+        align-items: center;
+        font-family: $font;
+        font-size: 14px;
+        font-weight: 400;
+        input {
+            border: none;
+            background-color: $accent-color;
+            color: $white;
+        }
+        p {
+            color: $white;
+            margin: 0;
+        }
+        svg {
+            margin-right: 10px;
+        }
+        div {
+            margin-right: 15px;
+        }
+        .button-add-task {
+            margin-left: 25px;
+        }
+    }
 }

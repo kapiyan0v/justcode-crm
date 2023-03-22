@@ -414,3 +414,32 @@ body {
         padding: 5px; }
         .clients-page nav li a {
           color: #5E6A86; }
+  .clients-change {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: fixed;
+    padding: 0 20px 0 15px;
+    background-color: #142957;
+    border-radius: 8px;
+    width: 800px;
+    height: 50px;
+    left: 500px;
+    top: 700px;
+    align-items: center;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 14px;
+    font-weight: 400; }
+    .clients-change input {
+      border: none;
+      background-color: #142957;
+      color: #fff; }
+    .clients-change p {
+      color: #fff;
+      margin: 0; }
+    .clients-change svg {
+      margin-right: 10px; }
+    .clients-change div {
+      margin-right: 15px; }
+    .clients-change .button-add-task {
+      margin-left: 25px; }
