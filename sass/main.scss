@@ -584,7 +584,9 @@ body {
                 td:first-child {
                     padding: 12px 0 12px 0;  
                 }
+                
             }
+            
             
         }
     }
@@ -649,4 +651,12 @@ body {
             margin-left: 25px;
         }
     }
+    
+}
+.checked {
+    background-color: #d9e9ff;
+    color: #142957;
+}
+.display-none {
+    display: none;
 }

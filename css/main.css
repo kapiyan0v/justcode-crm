@@ -443,3 +443,10 @@ body {
       margin-right: 15px; }
     .clients-change .button-add-task {
       margin-left: 25px; }
+
+.checked {
+  background-color: #d9e9ff;
+  color: #142957; }
+
+.display-none {
+  display: none; }
