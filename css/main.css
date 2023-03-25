@@ -44,6 +44,7 @@ body {
         height: 24px;
         margin-right: 11px; }
       .header-actions__profile p {
+        margin-bottom: 0;
         font-family: "Ubuntu", sans-serif;
         font-size: 13px;
         color: #5E6A86;
@@ -63,10 +64,10 @@ body {
   flex-direction: row; }
 
 .navigation {
-  width: 200px;
+  width: 270px;
   background-color: #142957;
-  height: 100vh;
-  padding: 56px 18px; }
+  height: 100vw;
+  padding: 45px 10px; }
   .navigation-list {
     list-style: none; }
     .navigation-list__item {
@@ -318,24 +319,29 @@ body {
   padding: 29px 0 0 20px; }
   .clients-main {
     display: flex;
-    flex-direction: row; }
+    flex-direction: row;
+    align-items: center; }
     .clients-main p {
       color: #142957;
       font-size: 24px;
       font-weight: 500;
-      line-height: 27.58px; }
-    .clients-main ul li {
-      color: #5E6A86;
-      font-size: 16px;
-      font-weight: 400;
-      line-height: 18.38px;
-      padding-top: 8px;
-      list-style: none;
-      padding-right: 75px; }
-    .clients-main ul li::before {
-      content: "\2022";
-      font-size: 16px;
-      padding: 15px 5px 0 14px; }
+      line-height: 27.58px;
+      margin-bottom: 0; }
+    .clients-main ul {
+      display: flex;
+      align-items: center;
+      margin-bottom: 0px; }
+      .clients-main ul li {
+        color: #5E6A86;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 18.38px;
+        list-style: none;
+        margin-right: 50px; }
+      .clients-main ul li::before {
+        content: "\2022";
+        font-size: 16px;
+        padding: 15px 5px 0 14px; }
     .clients-main form input {
       width: 552px;
       height: 40px;
@@ -375,19 +381,16 @@ body {
       font-weight: 500;
       line-height: 16.09px;
       margin-bottom: 8px; }
-      .clients-table thead tr td:first-child {
-        padding: 32px 21.97px 32px 0; }
-      .clients-table thead tr td:nth-child(2) {
-        padding-right: 138px; }
-      .clients-table thead tr td:nth-child(3) {
-        padding-right: 47px;
-        width: 97px; }
-      .clients-table thead tr td:nth-child(4) {
-        padding-right: 49px; }
-      .clients-table thead tr td:nth-child(5) {
-        padding-right: 114px; }
-      .clients-table thead tr td:nth-child(6) {
-        padding-right: 47px; }
+      .clients-table thead tr td {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        width: 240px;
+        padding-right: 40px; }
+        .clients-table thead tr td:first-child {
+          width: 20px;
+          margin-right: 20px; }
+        .clients-table thead tr td:nth-child(2) {
+          width: 20px; }
     .clients-table tbody {
       color: #000000;
       font-size: 14px;
@@ -411,3 +414,42 @@ body {
         padding: 5px; }
         .clients-page nav li a {
           color: #5E6A86; }
+
+.error-main {
+  display: flex;
+  flex-direction: column; }
+
+.error img {
+  margin-left: 55px; }
+
+.error h3 {
+  margin: 0;
+  margin-left: 420px;
+  color: #585858;
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px; }
+
+.error button {
+  font-family: 'Ubuntu';
+  margin-top: 41px;
+  margin-left: 460px;
+  width: 148px;
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  background: #5874D0;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 17px; }
+
+.error a {
+  color: #ffffff;
+  text-decoration: none; }
+  .error a:hover {
+    opacity: .5;
+    transition: .3s ease;
+    cursor: pointer; }
