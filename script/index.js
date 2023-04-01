@@ -48,7 +48,13 @@ for (let item of navigation_list) {
 }
 nav.innerHTML = nav_items
 
-
+window.addEventListener("load", function() {
+    // проверяем текущий URL страницы
+    if (window.location.href === "../pages/404.html") {
+      // здесь ваш код будет выполняться только на странице https://example.com/mypage
+      alert("Вы на странице https://example.com/mypage");
+    }
+  });
 // table
 const data = [
     {

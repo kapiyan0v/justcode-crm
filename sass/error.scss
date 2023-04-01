@@ -1,0 +1,359 @@
+$accent-color: #142957;
+$white: #fff;
+$background-color: #f6f8ff;
+$secondary-color: #5E6A86;
+
+$font: 'Ubuntu', sans-serif;
+
+@mixin hoverOpacity {
+    opacity: .5;
+    transition: .3s ease;
+    cursor: pointer;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    margin: 0 16px 0;
+}
+
+body {
+    background-color: $background-color;
+    overflow-x: hidden;
+}
+@function powTwo($base) {
+
+    @return $base * 2 * 1px;
+}
+.header {
+    height: 60px;
+    background-color: $white;   
+    box-shadow: powTwo(0) powTwo(2) powTwo(5) rgba(0, 0, 0, 0.1);
+    &-inner {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    &-logo {
+        margin: 8px 50px;
+        &:hover {
+           @include hoverOpacity()
+        }
+    }
+    &-actions {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-right: 40px;
+        &__notifications {
+            margin-right: 30px;
+            &:hover {
+                @include hoverOpacity()
+            }
+        }
+        &__profile {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-right: 60px;
+            img {
+                height: 24px;
+                margin-right: 11px;
+            }
+            p {
+                margin-bottom: 0;
+                font-family: $font;
+                font-size: 13px;
+                color: $secondary-color;
+                font-weight: 500;
+                margin-right: 5px;
+            }
+            &:hover {
+                @include hoverOpacity()
+            }
+        }
+        &__help {
+            &:hover {
+                @include hoverOpacity()
+            }
+        }
+    }
+}
+.main {
+    display: flex;
+    flex-direction: row;
+}
+.navigation {
+    width: 270px;
+    background-color: $accent-color;
+    height: 100vw;
+    padding: 45px 10px;
+    &-list {
+        list-style: none;
+        &__item {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 26px;
+            img {
+                width: 20px;
+                margin-right: 15px;
+            }
+            p {
+                font-family: $font;
+                font-size: 16px;
+                font-weight: 500;
+                color: $white;
+            }
+            &:hover {
+                @include hoverOpacity();
+            }
+        }
+    }
+}
+@mixin box {
+    background-color: #F4FF88;
+    color: #5B8C00 ;
+    font-size: 12px;
+    padding: 5px 3px;
+    border-radius: 60px;
+}
+@mixin flexBox {
+    display: flex;
+    flex-direction: row;
+}
+@mixin title {
+    font-size: 48px;
+    color: $accent-color;
+    font-family: $font;
+    font-weight: 700;
+}$accent-color: #142957;
+$white: #fff;
+$background-color: #f6f8ff;
+$secondary-color: #5E6A86;
+
+$font: 'Ubuntu', sans-serif;
+
+@mixin hoverOpacity {
+    opacity: .5;
+    transition: .3s ease;
+    cursor: pointer;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    margin: 0 16px 0;
+}
+
+body {
+    background-color: $background-color;
+    overflow-x: hidden;
+}
+@function powTwo($base) {
+
+    @return $base * 2 * 1px;
+}
+.header {
+    height: 60px;
+    background-color: $white;   
+    box-shadow: powTwo(0) powTwo(2) powTwo(5) rgba(0, 0, 0, 0.1);
+    &-inner {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    &-logo {
+        margin: 8px 50px;
+        &:hover {
+           @include hoverOpacity()
+        }
+    }
+    &-actions {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-right: 40px;
+        &__notifications {
+            margin-right: 30px;
+            &:hover {
+                @include hoverOpacity()
+            }
+        }
+        &__profile {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-right: 60px;
+            img {
+                height: 24px;
+                margin-right: 11px;
+            }
+            p {
+                margin-bottom: 0;
+                font-family: $font;
+                font-size: 13px;
+                color: $secondary-color;
+                font-weight: 500;
+                margin-right: 5px;
+            }
+            &:hover {
+                @include hoverOpacity()
+            }
+        }
+        &__help {
+            &:hover {
+                @include hoverOpacity()
+            }
+        }
+    }
+}
+.main {
+    display: flex;
+    flex-direction: row;
+}
+.navigation {
+    width: 60px;
+    background-color: $accent-color;
+    height: 100vw;
+    margin: 0;
+    padding: 0;
+    &-list {
+        margin-top: 56px;
+        list-style: none;
+        padding: 0;
+        &__item {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 26px;
+            justify-content: center;
+            img {
+                width: 20px;
+                margin: 0;
+                
+            }
+            p {
+                font-family: $font;
+                font-size: 16px;
+                font-weight: 500;
+                color: $white;
+            }
+            &:hover {
+                @include hoverOpacity();
+            }
+        }
+    }
+}
+@mixin box {
+    background-color: #F4FF88;
+    color: #5B8C00 ;
+    font-size: 12px;
+    padding: 5px 3px;
+    border-radius: 60px;
+}
+@mixin flexBox {
+    display: flex;
+    flex-direction: row;
+}
+@mixin title {
+    font-size: 48px;
+    color: $accent-color;
+    font-family: $font;
+    font-weight: 700;
+}
+.error {
+    margin-left: auto;
+    margin-right: auto;    
+    &-main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+    img {
+        margin: 0 auto;
+    }
+   h3 {
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;  
+    color: #585858;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+   }
+   button {
+    font-family: 'Ubuntu';
+    margin: 41px;
+    margin-left: auto;
+    margin-right: auto;  
+    width: 148px;
+    height: 40px;
+    border: none;
+    border-radius: 8px ;
+    background: #5874D0;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 17px;
+   }
+   a {
+    color: #ffffff;
+    text-decoration: none;
+        &:hover {
+            @include hoverOpacity()
+        }
+   }
+}
+
+// .error {
+//     &-main {
+//         display: flex;
+//         flex-direction: column;
+        
+        
+//     }
+//     img {
+//         margin-left: 55px;
+//     }
+//    h3 {
+//     margin: 0;
+//     margin-left: 420px ;
+//     color: #585858;
+//     font-family: 'Ubuntu';
+//     font-style: normal;
+//     font-weight: 400;
+//     font-size: 24px;
+//     line-height: 28px;
+//    }
+//    button {
+//     font-family: 'Ubuntu';
+//     margin-top: 41px;
+//     margin-left: 460px;
+//     width: 148px;
+//     height: 40px;
+//     border: none;
+//     border-radius: 8px ;
+//     background: #5874D0;
+//     color: #ffffff;
+//     font-weight: 400;
+//     font-size: 15px;
+//     line-height: 17px;
+//    }
+//    a {
+//     color: #ffffff;
+//     text-decoration: none;
+//         &:hover {
+//             @include hoverOpacity()
+//         }
+//    }
+// }
