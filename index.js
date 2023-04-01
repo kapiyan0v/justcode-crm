@@ -163,24 +163,36 @@ const checkboxes = table.querySelectorAll('input[type="checkbox"]')
 const checkAll = document.querySelector('.target-all')
 const trs = table.querySelectorAll('tr');
 checkAll.checked = false;
+    let checkedBoxes = 0;
+
 // выбор всех чекбоксов
 checkAll.addEventListener('click', (e)=> {
+   
     if (checkAll.checked) {
         for (let i of checkboxes) {
             i.checked = true;
-           
+           checkedBoxes++;
         }
+        for (let tr of trs) {
+            tr.classList.add('checked')
+        }
+        changeMenu.classList.remove('display-none')
+
     } else {
         for (let i of checkboxes) {
             i.checked = false;
-            
+            checkedBoxes--;
         }
+        for (let tr of trs) {
+            tr.classList.remove('checked')
+        }
+        changeMenu.classList.add('display-none')
     }
-    for (let tr of trs) {
-        tr.classList.toggle('checked')
-    }
-    changeMenu.classList.toggle('display-none')
-    checkedNum.innerHTML = checkboxes.length;
+
+   
+   
+   
+    checkedNum.innerHTML = checkedBoxes;
     
 })
 
@@ -219,6 +231,7 @@ closeMenu.addEventListener('click', (e)=> {
     for (let i of checkboxes) {
         if (i.checked === true) {
             i.checked = false;
+            checkedBoxes--;
         }
     }
     for (let tr of trs) {
@@ -232,10 +245,11 @@ deleteClients.addEventListener('click', (e)=> {
         if (checkbox.checked === true) {
             checkbox.closest('tr').remove();
             checkbox.checked = false;
+            checkedBoxes--
         }
     }
     changeMenu.classList.add('display-none')
-    
+    checkAll.checked = false;
 
 
 })
