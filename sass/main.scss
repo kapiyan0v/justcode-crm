@@ -107,8 +107,8 @@ body {
 .navigation {
     width: 200px;
     background-color: $accent-color;
-    height: 100vh;
     padding: 56px 18px;
+    height: 2291px;
     &-list {
         list-style: none;
         &__item {
@@ -604,7 +604,9 @@ body {
                         width: 20px;
                     }
                 }
+                
             }
+            
             
         }
     }
@@ -634,6 +636,91 @@ body {
         }
         
     }
+    &-change {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        position: fixed;
+        padding: 0 20px 0 15px;
+        background-color: $accent-color;
+        border-radius: 8px;
+        width: 800px;
+        height: 50px;
+        left: 500px;
+        top: 700px;
+        align-items: center;
+        font-family: $font;
+        font-size: 14px;
+        font-weight: 400;
+        input {
+            border: none;
+            background-color: $accent-color;
+            color: $white;
+        }
+        p {
+            color: $white;
+            margin: 0;
+        }
+        svg {
+            margin-right: 10px;
+        }
+        div {
+            margin-right: 15px;
+        }
+        .button-add-task {
+            margin-left: 25px;
+        }
+    }
+    
+}
+.checked {
+    background-color: #d9e9ff;
+    color: #142957;
+}
+.display-none {
+    display: none;
+}
+.error {
+    &-main {
+        display: flex;
+        flex-direction: column;
+        
+        
+    }
+    img {
+        margin-left: 55px;
+    }
+   h3 {
+    margin: 0;
+    margin-left: 420px ;
+    color: #585858;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+   }
+   button {
+    font-family: 'Ubuntu';
+    margin-top: 41px;
+    margin-left: 460px;
+    width: 148px;
+    height: 40px;
+    border: none;
+    border-radius: 8px ;
+    background: #5874D0;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 17px;
+   }
+   a {
+    color: #ffffff;
+    text-decoration: none;
+        &:hover {
+            @include hoverOpacity()
+        }
+   }
 }
 // .search-icon{
 //         position: absolute;
