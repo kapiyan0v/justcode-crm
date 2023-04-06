@@ -660,3 +660,45 @@ body {
 .display-none {
     display: none;
 }
+.error {
+    &-main {
+        display: flex;
+        flex-direction: column;
+        
+        
+    }
+    img {
+        margin-left: 55px;
+    }
+   h3 {
+    margin: 0;
+    margin-left: 420px ;
+    color: #585858;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+   }
+   button {
+    font-family: 'Ubuntu';
+    margin-top: 41px;
+    margin-left: 460px;
+    width: 148px;
+    height: 40px;
+    border: none;
+    border-radius: 8px ;
+    background: #5874D0;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 17px;
+   }
+   a {
+    color: #ffffff;
+    text-decoration: none;
+        &:hover {
+            @include hoverOpacity()
+        }
+   }
+}
