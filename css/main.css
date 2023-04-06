@@ -357,7 +357,10 @@ body {
       border: none;
       background-color: #fff;
       height: 40px;
-      width: 40px; }
+      width: 40px;
+      align-items: center; }
+    .clients-main-settings {
+      padding-left: 62px; }
     .clients-main__button {
       background-color: #5874D0;
       padding: 11.5px 13px 11.5px 40px;
@@ -367,7 +370,7 @@ body {
       font-size: 15px;
       line-height: 17.24px;
       font-weight: 400;
-      margin-left: 93px;
+      margin-left: 20px;
       border-radius: 5px;
       border: none; }
   .clients-table {
@@ -380,7 +383,9 @@ body {
       font-size: 14px;
       font-weight: 500;
       line-height: 16.09px;
-      margin-bottom: 8px; }
+      margin-bottom: 8px;
+      display: flex;
+      flex-direction: column; }
       .clients-table thead tr td {
         padding-top: 20px;
         padding-bottom: 20px;
@@ -395,9 +400,17 @@ body {
       color: #000000;
       font-size: 14px;
       font-weight: 400;
-      line-height: 16.09px; }
-      .clients-table tbody tr td:first-child {
-        padding: 12px 0 12px 0; }
+      line-height: 16.09px;
+      display: flex;
+      flex-direction: column; }
+      .clients-table tbody tr td {
+        padding-right: 40px;
+        padding-bottom: 8px; }
+        .clients-table tbody tr td:first-child {
+          width: 20px;
+          margin-right: 20px; }
+        .clients-table tbody tr td:nth-child(2) {
+          width: 20px; }
   .clients-page {
     display: flex;
     flex-direction: row; }
@@ -414,6 +427,26 @@ body {
         padding: 5px; }
         .clients-page nav li a {
           color: #5E6A86; }
+.test {
+  padding: 19px 10px 14px 0;
+  width: max-content; }
+  .test :first-child {
+    background-color: #5B8C00; }
+  .test :nth-child(2) {
+    background-color: #398DEF; }
+  .test :nth-child(3) {
+    background-color: #398DEF; }
+  .test :nth-child(4) {
+    background-color: #FA541C; }
+  .test :nth-child(5) {
+    background-color: #FA541C; }
+  .test .button-expanded {
+    padding: 5px 7px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    border: none;
+    border-radius: 5px; }
   .clients-change {
     display: flex;
     flex-direction: row;
