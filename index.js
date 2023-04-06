@@ -142,18 +142,121 @@ let table = document.getElementById('table-body');
 for (let i = 0; i <= data.length; i++) {
     let table_row = document.createElement('tr')
     for (let client of data) {
-        var table_data = `<td>${arrowSvg}</td>
-                          <td><input type="checkbox" name="" id="" /></td>
+        
+            var table_data = `<td>${arrowSvg}</td>
+                          <td><input type="checkbox" name="" id=""/></td>
                           <td>${client.fullName}</td>
                           <td>${client.manager}</td>
                           <td>${client.phone}</td>
                           <td>${client.email}</td>
                           <td>${client.createdAt}</td>
                           <td>${client.offerName}</td>`
+        
+       
     }
     table_row.innerHTML = table_data;
     table.appendChild(table_row)
 }
+
+//  clients-change feature by Aibar and Bauyrzhan
+
+const checkboxes = table.querySelectorAll('input[type="checkbox"]')
+const checkAll = document.querySelector('.target-all')
+const trs = table.querySelectorAll('tr');
+checkAll.checked = false;
+    let checkedBoxes = 0;
+
+// выбор всех чекбоксов
+checkAll.addEventListener('click', (e)=> {
+   
+    if (checkAll.checked) {
+        for (let i of checkboxes) {
+            i.checked = true;
+           checkedBoxes++;
+        }
+        for (let tr of trs) {
+            tr.classList.add('checked')
+        }
+        changeMenu.classList.remove('display-none')
+
+    } else {
+        for (let i of checkboxes) {
+            i.checked = false;
+            checkedBoxes--;
+        }
+        for (let tr of trs) {
+            tr.classList.remove('checked')
+        }
+        changeMenu.classList.add('display-none')
+    }
+
+   
+   
+   
+    checkedNum.innerHTML = checkedBoxes;
+    
+})
+
+const changeMenu = document.querySelector('.clients-change')
+const checkedNum = changeMenu.querySelector('.checked-numm')
+const closeMenu = document.querySelector('.clients-change__button-close');
+const deleteClients = document.querySelector('.clients-change__button-delete');
+for (let checkbox of checkboxes) {
+    checkbox.addEventListener('click', (e)=> {
+       e.target.closest('tr').classList.toggle('checked')
+       
+           
+       
+    })
+}
+table.addEventListener('click', (e)=> {
+    let checked = false;
+    let num = 0;
+    for (let checkbox of checkboxes) {
+        if (checkbox.checked === true ) {
+            checked = true;
+            num++;
+        } 
+    }
+    if (checked === true) {
+        changeMenu.classList.remove('display-none')
+        checkedNum.innerHTML = num;
+    } else {
+        changeMenu.classList.add('display-none')
+    }
+})
+
+closeMenu.addEventListener('click', (e)=> {
+    changeMenu.classList.add('display-none')
+    checkAll.checked = false;
+    for (let i of checkboxes) {
+        if (i.checked === true) {
+            i.checked = false;
+            checkedBoxes--;
+        }
+    }
+    for (let tr of trs) {
+        tr.classList.remove('checked');
+        
+    }
+})
+
+deleteClients.addEventListener('click', (e)=> {
+    for (let checkbox of checkboxes) {
+        if (checkbox.checked === true) {
+            checkbox.closest('tr').remove();
+            checkbox.checked = false;
+            checkedBoxes--
+        }
+    }
+    changeMenu.classList.add('display-none')
+    checkAll.checked = false;
+
+
+})
+
+
+
 
 
 
